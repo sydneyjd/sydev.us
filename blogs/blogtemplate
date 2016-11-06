@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="Random chatter about tech and stuff" />
+  <meta name="description" content="A bunch of random tech ramblings" />
+  <title>
+    A bunch of tinkering nothings
+  </title>
+  <link rel="stylesheet" href="../butter1.css">
+</head>
+<body>
+  <div id="header">
+    <h1>Sydney's Blogs</h1>
+  </div>
+
+  <ul id="navbar">
+    <li> <a href="../index.html">Home</a>
+    </li>
+    <li> <a href="../blog.html">Blog</a>
+    </li>
+    <li><a href="http://www.secretchronicles.de">TSC</a>
+    </li>
+    <li><a href="http://supertux.lethargik.org/">Supertux</a>
+    </li>
+  </ul>
+  <div id="one">
+    <quote> Yep, this page is blank at the moment... </quote>
+  </div>
+  <ul id="footer">
+    <p> &copy; 2016 Sydney Dykstra</p>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+  <channel>
+    <title>Sydney Dykstra's Blog</title>
+    <description>RSS Feed for Sydney's Blog</description>
+    <link>https://sydev.us/blog.html</link>
+    <item>
+      <title>My First Blog</title>
+      <link>https://sydev.us/blogs/09-19-2016.html</link>
+      <description> My First Blog Post </description>
+    </item>
+    <item>
+      <title>Another day in the life...</title>
+      <link>https://sydev.us/blogs/10-9-16.html</link>
+      <description> An Update on what has been going on lately </description>
+    </item>
+  </channel>
+</rss>

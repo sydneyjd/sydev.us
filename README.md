@@ -1,2 +1,2 @@
 # sydev.us
-My website
+The source files for my website hosted at https://www.sydev.us
