@@ -25,7 +25,7 @@
     <li><a href="http://supertux.lethargik.org/">Supertux</a>
     </li>
   </ul>
-  <div id="one">
+  <div id="console">
     <quote> Yep, this page is blank at the moment... </quote>
   </div>
   <ul id="footer">
