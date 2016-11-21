@@ -4,7 +4,18 @@
   <channel>
     <title>Sydney Dykstra's Blog</title>
     <description>RSS Feed for Sydney's Blog</description>
-    <link>https://sydev.us/blog.html</link>
+    <link>https://sydev.us/blogs/index.html</link>
+<item>
+  <title>
+Automation script
+  </title>
+  <link>
+https://sydev.us/blogs/11-22-16.html
+  </link>
+  <description>
+First post using the blog automation script i wrote
+  </description>
+</item>
     <item>
       <title>This Needs to go somewhere...</title>
       <link>https://sydev.us/blogs/11-7-16.html</link>
