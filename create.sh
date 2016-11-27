@@ -15,7 +15,7 @@ add1=/home/sydney/Sources/sydev.us/blogs/add1.html
 
 cp -p "$blogtemplate" "$filedir$filename"
 nano "$filedir1"
-sed -i "30r $filedir1" "$filedir$filename"
+sed -i "29r $filedir1" "$filedir$filename"
 firefox "$filedir$filename"
 read -p "Does it look good enough? (y/n)" ANS
 if [ "$ANS" = "y" ]; then
@@ -37,13 +37,8 @@ sed -i "8i $desc" "$filedir$filename"
 sed -i "11i $desc" "$filedir$filename"
 cp -p "$add" "$add1"
 sed -i "3i $web$filename" "$add1"
-sed -i "5i $filename-$title" "$add1"
-sed -i "39r $add1" "$blogindex" 
+sed -i "5i $filename - $title" "$add1"
+sed -i "39r $add1" "$blogindex"
 rm "$rsstwo"
 rm "$add1"
 echo "There, everything *should* be done :-D, just push it to git!"
-
-
-
-
-
