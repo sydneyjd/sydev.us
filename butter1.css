@@ -5,7 +5,7 @@ body {
   margin: 0px;
 }
 #header {
-  background-image: url("camo.png");
+  background: linear-gradient(to right,#006600,#001a00);
   color:white;
   text-align: center;
   width: 100%;
@@ -28,8 +28,8 @@ body {
   display: inline-block;
 }
 #navbar a:hover {
-  background-color: #003300;
-  transition: 0.3s;
+  background-color: #330033;
+  transition: 0.5s;
   padding: 15px;
 }
 #navbar a {
@@ -40,7 +40,7 @@ body {
   display:block;
 }
 #footer {
-  background-image: url("camo.png");
+  background: linear-gradient(to left,#006600,#001a00);
   color:white;
   margin: 0px;
   list-style-type:none;
