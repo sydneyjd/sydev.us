@@ -1,0 +1,389 @@
+{:	data{o:Nanoc::Identifier:
+@type:	full:@stringI"/blog.html:ET{:default{
+:	lastU:Nanoc::Int::TextualContent[0I"�<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Sydney Dykstra's Website</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+  <div id="header">
+    <h1>The website of Sydney Dykstra</h1>
+  </div>
+
+  <ul id="navbar">
+    <li> <a href="https://sydev.us/index.html">Home</a>
+    </li>
+    <li><a href="/blog/index.html">Blog</a>
+    </li>
+    <li> <a href="https://pjuu.com/sydney">Pjuu</a>
+    </li>
+    <li><a href="https://github.com/sydneyjd/">Github</a>
+    </li>
+    <li><a href="https://upload.sydev.us/">Owncloud</a>
+    </li>
+    <li><a href="https://homeserver.sydev.us/">HomeServer</a>
+    </li>
+  </ul>
+  <div id="main">
+    <div id="consolea">
+    <h1> Welcome to my blog!</h1>
+
+
+<br>
+  <div class='post'>
+    <h1><a href="/blog/04/30/First-Blog-Post/">My first post</a></h1>
+    <aside>Posted on: 2019-04-30</aside>
+    <article>
+      <p>Hello Everyone who doesn’t read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.</p>
+
+<p>-Sydney</p>
+
+
+    </article>
+  </div>
+
+<br>
+  <div class='post'>
+    <h1><a href="/blog/03/30/First-Blog-Post/">My first post</a></h1>
+    <aside>Posted on: 2019-03-30</aside>
+    <article>
+      <p>Hello Everyone who doesn’t read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.</p>
+
+<p>-Sydney</p>
+
+
+    </article>
+  </div>
+
+
+  </div>
+  </div>
+    <div id="footer">
+      <p> &copy; 2016-2018 Sydney Dykstra</p>
+    </div>
+  </body>
+  </html>
+;
+T:rawU;[I"5/home/sydney/Sources/sydev.us1/content/blog.html;
+TI"<h1> Welcome to my blog!</h1>
+
+<% sorted_articles.each do |post| %>
+<br>
+  <div class='post'>
+    <h1><%= link_to post[:title], post.path %></h1>
+    <aside>Posted on: <%= post[:created_at] %></aside>
+    <article>
+      <%= post.compiled_content %>
+    </article>
+  </div>
+<% end %>
+;
+T:pre@:_0@:	post@o;;;;	I"/blog.xml;
+T{;{	;U;[I"4/home/sydney/Sources/sydev.us1/content/blog.xml;
+TI"g<%= atom_feed :title => 'Sydney's Blog', :author_uri => 'https://sydev.us/blog', :limit => 10, %>
+;
+T;@;@;@o;;;;	I"/stylesheet.css;
+T{;{	;U;[I":/home/sydney/Sources/sydev.us1/content/stylesheet.css;
+TI"�body {
+  text-align:center;
+  background-color:#cccccc;
+  font-family: sans-serif;
+  margin: 0px;
+}
+#header {
+  background: linear-gradient(to right,#2a6f2a,#003300);
+  color:white;
+  text-align: center;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+}
+#navbar {
+  background-color: #4d2600;
+  color: white;
+  padding: 0px;
+  list-style-type: none;
+  width: 100%;
+  margin: 0px;
+  box-shadow: 0px 5px 20px 0px black;
+}
+#navbar li {
+  display: inline-block;
+}
+#navbar a:hover {
+  background-color: #330033;
+  transition: 0.5s;
+  padding: 15px;
+}
+#navbar a {
+  text-shadow: 1px 1px black;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  display:block;
+}
+#footer {
+  background: linear-gradient(to left,#2a6f2a,#003300);
+  color:white;
+  margin: 0px;
+  list-style-type:none;
+  font-size:70%;
+  clear:both;
+  padding: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 5px 20px 5px black;
+}
+
+#console {
+  color: white;
+  list-style-type: none;
+  background-color: #4d2600;
+  max-width:85%;
+  margin: auto;
+  height: 1000px;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 20px 5px black;
+}
+#consolea {
+  color: white;
+  list-style-type: none;
+  background-color: #4d2600;
+  width:77%;
+  min-height: 1000px;
+  margin-top: 30px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  box-shadow: 0px 10px 20px 5px black;
+  min-width: 250px;
+}
+#console a {
+  color: white;
+}
+#consolea a {
+  color: white;
+}
+#bioin {
+  margin-top: 30px;
+  min-width: 250px;
+  padding: 10px;
+  background-color: #003300;
+  box-shadow: 0px 0px 20px 1px black;
+  color: white;
+}
+.post {
+text-align:left;
+}
+;
+T;@;@;@o;;;;	I"/index.html;
+T{;{
+;U;[0I""<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Sydney Dykstra's Website</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+  <div id="header">
+    <h1>The website of Sydney Dykstra</h1>
+  </div>
+
+  <ul id="navbar">
+    <li> <a href="https://sydev.us/index.html">Home</a>
+    </li>
+    <li><a href="/blog/index.html">Blog</a>
+    </li>
+    <li> <a href="https://pjuu.com/sydney">Pjuu</a>
+    </li>
+    <li><a href="https://github.com/sydneyjd/">Github</a>
+    </li>
+    <li><a href="https://upload.sydev.us/">Owncloud</a>
+    </li>
+    <li><a href="https://homeserver.sydev.us/">HomeServer</a>
+    </li>
+  </ul>
+  <div id="main">
+    <div id="consolea">
+      <p>Hello and welcome to my website. <br>
+    Yes, this is a very empty site... Feel free to check out my <a href="/blog/index.html">blog</a>
+    </p>
+
+  </div>
+  </div>
+    <div id="footer">
+      <p> &copy; 2016-2018 Sydney Dykstra</p>
+    </div>
+  </body>
+  </html>
+;
+T;U;[I"6/home/sydney/Sources/sydev.us1/content/index.html;
+TI"�  <p>Hello and welcome to my website. <br>
+    Yes, this is a very empty site... Feel free to check out my <a href="/blog/index.html">blog</a>
+    </p>
+;
+T;@);@&;@&o;;;;	I"/data/camo.png;
+T{;{	;o:Nanoc::Int::BinaryContent:@filenameI"9/home/sydney/Sources/sydev.us1/content/data/camo.png;
+T;@1;@1;@1o;;;;	I"&/blog/03-30-19-First-Blog-Post.md;
+T{;{	;U;[0I"o<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My first post - Sydney Dykstra's Website</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+  <div id="header">
+    <h1>The website of Sydney Dykstra</h1>
+  </div>
+
+  <ul id="navbar">
+    <li> <a href="https://sydev.us/index.html">Home</a>
+    </li>
+    <li><a href="/blog/index.html">Blog</a>
+    </li>
+    <li> <a href="https://pjuu.com/sydney">Pjuu</a>
+    </li>
+    <li><a href="https://github.com/sydneyjd/">Github</a>
+    </li>
+    <li><a href="https://upload.sydev.us/">Owncloud</a>
+    </li>
+    <li><a href="https://homeserver.sydev.us/">HomeServer</a>
+    </li>
+  </ul>
+  <div id="main">
+    <div id="consolea">
+    
+  <div class='post'>
+    <h1>My first post</h1>
+    <aside>Posted on: 2019-03-30</aside>
+    <article>
+      <p>Hello Everyone who doesn’t read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.</p>
+
+<p>-Sydney</p>
+
+
+    </article>
+  </div>
+
+  </div>
+  </div>
+    <div id="footer">
+      <p> &copy; 2016-2018 Sydney Dykstra</p>
+    </div>
+  </body>
+  </html>
+
+;
+T;U;[I"L/home/sydney/Sources/sydev.us1/content/blog/03-30-19-First-Blog-Post.md;
+TI"DHello Everyone who doesn't read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.
+
+-Sydney
+
+;
+T;U;[0I"T<p>Hello Everyone who doesn’t read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.</p>
+
+<p>-Sydney</p>
+
+;
+T;@7o;;;;	I"&/blog/04-30-19-First-Blog-Post.md;
+T{;{	;U;[0I"o<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My first post - Sydney Dykstra's Website</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+  <div id="header">
+    <h1>The website of Sydney Dykstra</h1>
+  </div>
+
+  <ul id="navbar">
+    <li> <a href="https://sydev.us/index.html">Home</a>
+    </li>
+    <li><a href="/blog/index.html">Blog</a>
+    </li>
+    <li> <a href="https://pjuu.com/sydney">Pjuu</a>
+    </li>
+    <li><a href="https://github.com/sydneyjd/">Github</a>
+    </li>
+    <li><a href="https://upload.sydev.us/">Owncloud</a>
+    </li>
+    <li><a href="https://homeserver.sydev.us/">HomeServer</a>
+    </li>
+  </ul>
+  <div id="main">
+    <div id="consolea">
+    
+  <div class='post'>
+    <h1>My first post</h1>
+    <aside>Posted on: 2019-04-30</aside>
+    <article>
+      <p>Hello Everyone who doesn’t read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.</p>
+
+<p>-Sydney</p>
+
+
+    </article>
+  </div>
+
+  </div>
+  </div>
+    <div id="footer">
+      <p> &copy; 2016-2018 Sydney Dykstra</p>
+    </div>
+  </body>
+  </html>
+
+;
+T;U;[I"L/home/sydney/Sources/sydev.us1/content/blog/04-30-19-First-Blog-Post.md;
+TI"DHello Everyone who doesn't read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.
+
+-Sydney
+
+;
+T;U;[0I"T<p>Hello Everyone who doesn’t read this(or the one that does), I hope to start a blog,
+and possibly stick with it. Anyways, this is my first test post, so feel free to leave.
+I hope to cover a number of really random things in this blog, mattering on if I
+find time to write posts, and if you can stand reading them.</p>
+
+<p>-Sydney</p>
+
+;
+T;@E:versioni
