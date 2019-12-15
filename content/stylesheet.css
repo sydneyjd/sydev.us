@@ -1,28 +1,25 @@
 body {
   text-align:center;
-  background-color:#cccccc;
+  background-color:#D7D7D7;
   font-family: sans-serif;
   margin: 0px;
 }
 #header {
-  background: linear-gradient(to right,#2a6f2a,#003300);
+  background: linear-gradient(to right,#1E1E1E,#444444);
   color:white;
   text-align: center;
   width: 100%;
+  text-shadow: 1px 1px black;
   padding-top: 2px;
   padding-bottom: 2px;
-  font-style: oblique;
-  font-weight: bold;
-  text-shadow: 3px 3px black;
 }
 #navbar {
-  background-color: #4d2600;
+  background: linear-gradient(to right,#1E1E1E,#444444);
   color: white;
   padding: 0px;
   list-style-type: none;
   width: 100%;
   margin: 0px;
-  box-shadow: 0px 5px 20px 0px black;
 }
 #navbar li {
   display: inline-block;
@@ -40,7 +37,7 @@ body {
   display:block;
 }
 #footer {
-  background: linear-gradient(to left,#2a6f2a,#003300);
+  background: linear-gradient(to left,#1E1E1E,#444444);
   color:white;
   margin: 0px;
   list-style-type:none;
@@ -55,44 +52,45 @@ body {
 }
 
 #console {
-  color: white;
+  color: black;
   list-style-type: none;
-  background-color: #4d2600;
+  background-color: #D7D7D7;
   max-width:85%;
   margin: auto;
   height: 1000px;
   padding: 10px;
   margin-top: 30px;
-  box-shadow: 0px 0px 20px 5px black;
+
 }
 #consolea {
-  color: white;
+  color: black;
   list-style-type: none;
-  background-color: #4d2600;
-  width:77%;
+  background-color: #D7D7D7;
+  width:90%;
   min-height: 1000px;
   margin-top: 30px;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  box-shadow: 0px 10px 20px 5px black;
   min-width: 250px;
 }
-#console a {
-  color: white;
-}
-#consolea a {
-  color: white;
-}
-#bioin {
-  margin-top: 30px;
-  min-width: 250px;
-  padding: 10px;
-  background-color: #003300;
-  box-shadow: 0px 0px 20px 1px black;
-  color: white;
-}
-.post {
+
+#post {
 text-align:left;
+border:2px solid black; 
+margin-bottom: 20px;
+}
+#post {
+padding: 10px;
+}
+#post img {
+width:40%;
+min-width:230px;
+image-orientation: from-image;
+}
+#post video {
+width:40%;
+min-width:230px;
+
 }

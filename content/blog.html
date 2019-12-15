@@ -1,12 +1,13 @@
 ---
 title: Blog
 ---
-<h1> Welcome to my blog!</h1>
+<h2> Welcome to my blog!</h2>
+<p> This blog is just a page of random thoughts, ideas and projects.<br> Just because it is written here does not mean it is 100% correct,<br> that I did it properly, or that I can provide support for it. Other than that, enjoy!</p>
 
 <% sorted_articles.each do |post| %>
 <br>
-  <div class='post'>
-    <h1><%= link_to post[:title], post.path %></h1>
+  <div id='post'>
+    <h2><%= link_to post[:title], post.path %></h2>
     <aside>Posted on: <%= post[:created_at] %></aside>
     <article>
       <%= post.compiled_content %>
